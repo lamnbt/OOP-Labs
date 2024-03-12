@@ -1,6 +1,7 @@
 
 
 import javax.swing.JOptionPane;
+import java.lang.Math;
 
 public class Equations {
 	public static void main(String args[]) {

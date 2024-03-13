@@ -1,4 +1,13 @@
 Exercise 6.1:
 - If the users choose "Cancel" in the "Save and Launch" pane, the file will not be saved and executed.
--
+
+- In order to customize the options to users, you can declare objects which are the options you want (e.g "Yes" and "No" or "I do" and "I don't"), then change the line of code:
+
+  int option = JOptionPane.showConfirmDialog(null, "Do you want to change to the first class ticket?");
+
+into:
+  
+  Object[] options = {"I do", "I don't"};
+  int option = JOptionPane.showOptionDialog(null, "Do you want to change to the first class ticket?", "Question", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+
 
